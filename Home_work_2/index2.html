@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Урок 2. Задание 3</title>
+   <script type="text/javascript">
+      // Напишите программу, которая будет рассчитывать и выводить на экран количество возможных вариантов доставки товара. Для решения задачи, используйте факториал N!, рассчитываемый с помощью цикла do-while.
+
+      let numberOfShops = 10;
+      let total = 1;
+
+      do {
+         total *= numberOfShops--;
+      } while (numberOfShops > 1)
+
+      document.write(`Количество возможных вариантов доставки товара - ${total}`);
+   </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
