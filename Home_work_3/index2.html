@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>Урок 3. Задание 3</title>
+   <script>
+      // Требуется: создать двумерный массив элементов размерностью 5х5 и заполнить его произвольными целочисленными значениями. По главной диагонали все числа со знаком (-) заменить на 0, а числа со знаком (+) на число 1.
+      let matrix = new Array(5);
+      matrix[0] = [2, 4, -92, 51, 18];
+      matrix[1] = [-4, -31, 14, 9, 1];
+      matrix[2] = [81, 5, 63, -25, 43];
+      matrix[3] = [33, 12, 5, -99, 6];
+      matrix[4] = [3, -17, 39, 8, 11];
+
+      for (let i = 0; i < matrix.length; i++) {
+         for (let j = 0; j < matrix[i].length; j++) {
+            if (i == j) {
+               if (matrix[i][j] > 0) matrix[i][j] = 1;
+               else matrix[i][j] = 0;
+            }
+         }
+         document.write(`${matrix[i].join(" ")} <br>`);
+      }
+   </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

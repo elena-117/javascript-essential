@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>Урок 3. Задание 2</title>
+   <script>
+      // Требуется: создать массив размерностью N элементов, заполнить его произвольными целыми значениями. Вывести наибольшее значение массива, наименьшее значение массива, общую сумму элементов, среднее арифметическое всех элементов, вывести все нечетные значения.
+      let arr = [8, 4, 98, 25, 6, 38, 19, 203, 10, 1];
+      let maxValue = arr[0];
+      let minValue = arr[0];
+      let sum = 0;
+      let average;
+
+      for (let i = 0; i < arr.length; i++) {
+         if (arr[i] > maxValue) maxValue = arr[i];
+
+         if (arr[i] < minValue) minValue = arr[i];
+
+         sum += arr[i];
+
+         if (arr[i] % 2 != 0) document.write(`Нечетное значение - ${arr[i]} <br>`);
+
+      }
+      document.write(`Наибольшее значение массива - ${maxValue} <br>`);
+      document.write(`Наименьшее значение массива - ${minValue} <br>`);
+      document.write(`Общая сумма элементов - ${sum} <br>`);
+      document.write(`Среднее арифметическое всех элементов - ${sum / arr.length} <br>`);
+   </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
