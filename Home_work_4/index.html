@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Калькулятор</title>
+</head>
+
+<body>
+   <h3>Калькулятор</h3>
+   <button id="add" value="+">Add</button>
+   <button id="sub">Sub</button>
+   <button id="mul">Mul</button>
+   <button id="div">Div</button>
+
+   <script>
+      // Сложение
+      let buttonAdd = document.getElementById('add');
+      buttonAdd.onclick = function (event) {
+         let firstValue = prompt('Введите 1-ое число', 99);
+         let secondValue = prompt('Введите 2-ое число', 99);
+         if (isNaN(firstValue) || isNaN(secondValue)) {
+            alert('Вы ввели не числовое значение')
+         } else {
+            let addResult = alert(
+               `Сумма чисел ${firstValue} и ${secondValue} =  ${parseInt(firstValue) + parseInt(secondValue)}`
+            );
+         }
+         return addResult;
+      }
+
+      // Вычитание
+      let buttonSub = document.getElementById('sub');
+      buttonSub.onclick = function () {
+         let firstValue = prompt('Введите 1-ое число', 99);
+         let secondValue = prompt('Введите 2-ое число', 99);
+         if (isNaN(firstValue) || isNaN(secondValue)) {
+            alert('Вы ввели не числовое значение')
+         } else {
+            let subResult = alert(
+               `Результат вычитания чисел ${firstValue} и ${secondValue} =  ${parseInt(firstValue) - parseInt(secondValue)}`
+            );
+         }
+         return subResult;
+      }
+
+      // Умножение
+      let buttonMul = document.getElementById('mul');
+      buttonMul.onclick = function () {
+         let firstValue = prompt('Введите 1-ое число', 99);
+         let secondValue = prompt('Введите 2-ое число', 99);
+         if (isNaN(firstValue) || isNaN(secondValue)) {
+            alert('Вы ввели не числовое значение')
+         } else {
+            let mulResult = alert(
+               `Результат умножения чисел ${firstValue} и ${secondValue} =  ${parseInt(firstValue) * parseInt(secondValue)}`
+            );
+         }
+         return mulResult;
+      }
+
+      // Деление
+      let buttonDiv = document.getElementById('div');
+      buttonDiv.onclick = function () {
+         let firstValue = prompt('Введите 1-ое число', 99);
+         let secondValue = prompt('Введите 2-ое число', 99);
+         if (secondValue == 0) {
+            alert('Ошибка: деление на 0');
+         }
+         if (isNaN(firstValue) || isNaN(secondValue)) {
+            alert('Вы ввели не числовое значение');
+         } else {
+            let divResult = alert(
+               `Результат деления чисел ${firstValue} и ${secondValue} =  ${parseInt(firstValue) / parseInt(secondValue)}`
+            );
+         }
+         return divResult;
+      }
+   </script>
+</body>
+
+</html>
