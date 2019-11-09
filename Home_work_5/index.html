@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Урок 5. Задание 1</title>
+</head>
+
+<body>
+
+   <script>
+      // Создать объект «Документ», в котором определить свойства «Заголовок, Тело, Футер, Дата». Создать в объекте вложенный объект – «Приложение». Создать в объекте «Приложение», вложенные объекты, «Заголовок, Тело, Футер, Дата». Создать методы для заполнения и отображения документа.
+      let myDocument = {
+         header: "",
+         body: "",
+         footer: "",
+         data: "",
+
+         myApplication: {
+            header: "",
+            body: "",
+            footer: "",
+            data: ""
+         },
+
+         query: function () {
+            let queryHeader = prompt("Значение для header", "");
+            let queryBody = prompt("Значение для body", "")
+            let queryFooter = prompt("Значение для footer", "");
+            let queryData = prompt("Значение для data", "");
+            myDocument.myApplication.header = queryHeader;
+            myDocument.myApplication.body = queryBody;
+            myDocument.myApplication.footer = queryFooter;
+            myDocument.myApplication.data = queryData;
+         },
+
+         display: function () {
+            document.write(`${myDocument.myApplication.header} <br>`);
+            document.write(`${myDocument.myApplication.body} <br>`);
+            document.write(`${myDocument.myApplication.footer} <br>`);
+            document.write(`${myDocument.myApplication.data} <br>`);
+         }
+      };
+
+      myDocument.query();
+      myDocument.display();
+   </script>
+</body>
+
+</html>
