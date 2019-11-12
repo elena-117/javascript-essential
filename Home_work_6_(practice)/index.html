@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>Обьекты, создание</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="btn-container">
+            <button class="btn btn-left" id="left">налево</button>
+            <button class="btn btn-right" id="right">в лес</button>
+            <button class="btn btn-top" id="top">в магазин</button>
+        </div>
+
+        <div class="stat-container">
+            <div class="info">
+                <ul>
+                    <li id="name"></li>
+                    <li id="damage"></li>
+                    <li id="armor"></li>
+                    <li id="money"></li>
+                    <li id="live"></li>
+                </ul>
+            </div>
+            <div class="info info-animal">
+                <ul>
+                    <li id="animal-name"></li>
+                    <li id="animal-damage"></li>
+                    <li id="animal-armor"></li>
+                    <li id="animal-cost"></li>
+                    <li id="animal-live"></li>
+                </ul>
+            </div>
+            <div class="info info-ded hide">
+                <ul>
+                    <li id="ded-name"></li>
+                    <li id="ded-damage"></li>
+                    <li id="ded-armor"></li>
+                    <li id="ded-cost"></li>
+                    <li id="ded-live"></li>
+                </ul>
+            </div>
+            <div id="button-block" class="hide">
+                <a class="btn-hit" id="hit"><img src="img/glove.png" alt="glove" width="60"><span>ударить</span></a>
+                <a class="btn-close" id="close"><img src="img/cancel.png" alt="cancel"
+                        width="60"><span>отмена</span></a>
+            </div>
+        </div>
+        <div id="img-kolobok" class="img-hero img-kolobok"><img src="img/kolobok2.png" alt="kolobok" width="300">
+        </div>
+        <div id="img-hare" class="img-hero img-hare hide"><img src="img/hare.png" alt="hare" width="500">
+        </div>
+        <div id="img-wolf" class="img-hero img-wolf hide"><img src="img/wolf.png" alt="wolf" width="500">
+        </div>
+        <div id="img-ded" class="img-hero img-ded hide"><img src="img/ded.png" alt="ded" width="350">
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

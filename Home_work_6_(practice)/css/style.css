@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap&subset=cyrillic');
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Caveat', cursive;
+   font-size: 20px;
+}
+
+.main {
+   height: 100vh;
+   background: url(../img/tree.png) no-repeat 45% 50%;
+   background-color: lightcyan;
+   background-size: 70%;
+}
+
+.info {
+   width: 300px;
+   height: 300px;
+   background-color: gold;
+   opacity: 0.85;
+   color: black;
+   display: flex;
+   flex-direction: column;
+   margin-left: 40px;
+}
+
+.btn {
+   font-family: 'Caveat', cursive;
+   margin: 30px;
+   padding: 8px 28px;
+   border-color: darkslategrey;
+   border-radius: 4px;
+   color: #ffffff;
+   font-weight: bold;
+   font-size: 16px;
+   text-transform: uppercase;
+   background-color: green;
+   cursor: pointer;
+}
+
+.btn:hover {
+   background-color: #ffffff;
+   color: green;
+   transition: all 0.2s ease;
+}
+
+.stat-container,
+.btn-container {
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+}
+
+.btn-hit,
+.btn-close {
+   display: block;
+   font-size: 22px;
+   margin-top: 20px;
+   margin-left: 10px;
+   cursor: pointer;
+}
+
+.btn-hit span,
+.btn-close span {
+   margin-left: 5px;
+   padding-top: 0;
+}
+
+.show {
+   display: block;
+}
+
+.hide {
+   display: none;
+}
+
+.img-hero {
+   position: absolute;
+   bottom: 0;
+   right: 30px;
+}
+
+.img-disappear {
+   opacity: 0;
+   transition: all 5s ease-out;
+}
+
+.img-kolobok {
+   left: 60px;
+}
+
+@media (max-width: 1340px) {
+   .img-kolobok img {
+      width: 250px;
+   }
+
+   .img-hare img {
+      width: 400px;
+   }
+
+   .img-wolf img {
+      width: 400px;
+   }
+
+   .img-ded img {
+      width: 300px;
+   }
+}
