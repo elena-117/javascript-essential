@@ -290,6 +290,9 @@ left.onclick = function () {
 
 // Кнопка "Магазин"
 top1.onclick = function () {
+   imgDed.classList.add("hide");
+   imgHare.classList.add("hide");
+   imgWolf.classList.add("hide");
    buttonBlock.classList.add("hide");
    buttonBlock.classList.remove("show");
    let getItem = prompt(`Магазин: Жизнь - 10 --> Стоимость 10 (ввести - live) ${'\n'} Броня - 2 --> Стоимость 15 (ввести - armor) ${'\n'} Атака (Урон) - 10 --> Стоимость 20 (ввести - damage)`);
